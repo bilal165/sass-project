@@ -1,1 +1,1 @@
-# hello this is my first project on github
+# this is my first sass and pug project
