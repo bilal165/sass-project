@@ -1,0 +1,29 @@
+header
+  //- the nav bar 
+  nav
+    .con
+      //- the nav title
+      h2
+        | elzero
+        span  .org
+        |
+      //- the ul links
+      span menu
+        i.fa.fa-chevron-right
+        ul
+          - for (var i in links)
+            li: a(href="#") #{links[i]}
+  //- the intro container
+  .intro
+    //- the continer
+    .con
+      h1 hello in our new
+        span  template
+      p
+        |
+        .
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        |
+        |
+      .buttons
+        include buttons

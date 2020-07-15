@@ -1,0 +1,54 @@
+footer {
+  background-color: #3b434c;
+  height: $footerHeight;
+  .con {
+    overflow: hidden;
+    width: 90%; height: 100%;
+    margin: 0px auto;
+    // the titles
+    h3 {
+      color: white;
+      line-height: $footerHeight;
+      font-size: 15px;
+      span {
+        color: $mainColor;
+      }
+      &:first-child {
+        float: left;
+      }
+
+      &:last-child {
+        float: right;
+      }
+    }
+  }
+}
+#scrollToTop {
+  background-color: navy;
+  @extend .fa-chevron-up;
+  z-index: 2;
+  span.back {
+    @extend %mainTran;
+    position: fixed;
+    bottom: 15px; right: 15px;
+    z-index: 3 !important;
+    background-color: blue;
+    width: 0px; height: 30px;
+  }
+  i.fa.fa-chevron-up {
+    display: block;
+    position: fixed;
+    bottom: 15px; right: 15px;
+    width: 30px; height: 30px;
+    color: white;
+    text-align: center; line-height: 30px;
+    cursor: pointer; z-index: 100;
+  }
+
+  &:hover {
+    span.back {
+      @extend %mainTran;
+      width: 30px;
+    }
+  }
+}
