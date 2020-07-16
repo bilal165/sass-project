@@ -4,12 +4,13 @@ var gulp = require('gulp'),
     auto = require('gulp-autoprefixer'),
     zip = require('gulp-zip'),
     git = require('gulp-git'),
+    concat = require('gulp-concat'),
     i = 1;
 
 // watch pug files
 function html () {
   return gulp.src('./stage/pug/*.pug')
-          .pipe(pug())
+          .pipe(pug({ pretty: true }))
           .pipe(gulp.dest('./dist/'));
 }
 
@@ -19,6 +20,13 @@ function css () {
           .pipe(sass())
           .pipe(auto())
           .pipe(gulp.dest('./dist/css'));
+}
+
+// create the js task
+function js() {
+  return gulp.src('./stage/js/*.js')
+          .pipe(concat())
+          .pipe(gulp.dest('./dist/js/'));
 }
 
 // compress the files into one file
@@ -41,6 +49,7 @@ function watch() {
   // gulp.watch('./stage/**/*.*', myGit);
   gulp.watch('./stage/**/*.pug', html);
   gulp.watch('./stage/**/*.scss', css);
+  gulp.watch('./stage/js/*.js', js);
   gulp.watch('./**/*.*', compress);
 }
 
@@ -49,4 +58,5 @@ exports.html = html;
 exports.css = css;
 exports.compress = compress;
 // exports.myGit = myGit;
+exports.js = js;
 exports.watch = watch;

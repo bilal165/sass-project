@@ -8,9 +8,9 @@ header {
   // the nav bar
   nav {
     width: 100%; height: $navHeight;
-    position: fixed;
+    position: absolute;
     top: 0px; left: 0px;
-    z-index: 2;
+    z-index: 3;
     * {
       color: white;
     }
@@ -36,13 +36,18 @@ header {
         line-height: $navHeight;
         float: right;
         cursor: pointer;
+
+        > i {
+          transform: rotate(-90deg) translateX(-8px) translateY(10px);
+        }
+
         &:hover {
-          transition: all 0.5s;
+          @extend %mainTran;
           @include color(true);
           > i {
             @extend %mainTran;
             color: $mainColor;
-            transform: rotate(90deg) translateX(-5px);
+            transform: rotate(0deg) translateX(-5px);
           }
 
           > ul {

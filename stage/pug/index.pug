@@ -20,10 +20,24 @@ html
         section.subs#subs
           form(name="form", id="form")
             input(type="email" placeholder="type the email and submit to get our news letter")
-            button(type="submit") submit now
+            button(type="submit") submit now !
+        section.works#works
+          h1 our
+            span  works
+          p 
+            .
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          .con
+            - for (var i in works)
+              .box
+                img(src=imgs[i])
+                .overlay
+                  h2 #{works[i]}
+                  button(type="button") show more
       include includes/footer
     //- scroll to Top buttons
     
     include includes/scrollTop
+    include includes/popUp
     script(src="js/jquery-3.5.1.js")
     script(src="js/master.js")

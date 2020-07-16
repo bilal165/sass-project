@@ -1,353 +1,401 @@
-body #scrollToTop:hover span.back, body #scrollToTop span.back, body article section.subs form button:hover, body article section.subs form button, body article section.features .con div.feature i:hover, body article section.features .con div.feature i, body header .intro .con .buttons span i.fa:hover, body header .intro .con .buttons span i.fa, body header .intro .con .buttons button:hover, body header .intro .con .buttons button, body header nav .con > span ul li:hover a, body header nav .con > span ul li:hover, body header nav .con > span ul li, body header nav .con > span ul, body header nav .con > span > i, body header nav .con > span:hover > ul, body header nav .con > span:hover > i {
-  transition: all 0.5s;
-}
+body header nav .con > span:hover, body header nav .con > span:hover > i, body header nav .con > span:hover > ul, body header nav .con > span > i, body header nav .con > span ul, body header nav .con > span ul li, body header nav .con > span ul li:hover, body header nav .con > span ul li:hover a, body header .intro .con .buttons button, body header .intro .con .buttons button:hover, body header .intro .con .buttons span i.fa, body header .intro .con .buttons span i.fa:hover, body article section.features .con div.feature i, body article section.features .con div.feature i:hover, body article section.subs form button, body article section.subs form button:hover, body article section.works#works div.con div.box div.overlay, body article section.works#works div.con div.box div.overlay button:hover, body #scrollToTop span.back, body #scrollToTop:hover span.back, body div.popUp.active button, body div.popUp.active button:hover {
+  transition: all .5s; }
 
 body {
   padding: 0px;
   margin: 0px;
-  background-color: #DDD;
-}
-body * {
-  font-family: tahoma;
-  padding: 0px;
-  margin: 0px;
-  line-height: 1.25;
-}
-body ul li, body ol li {
-  list-style: none;
-}
-body a {
-  text-decoration: none;
-  color: black;
-}
-body *:focus, body *:active {
-  outline: none;
-}
+  background-color: #DDD; }
+  body * {
+    font-family: tahoma;
+    padding: 0px;
+    margin: 0px;
+    line-height: 1.25; }
+  body ul li, body ol li {
+    list-style: none; }
+  body a {
+    text-decoration: none;
+    color: black; }
+  body *:focus, body *:active {
+    outline: none; }
 
 body {
-  overflow-x: hidden;
-}
-body header {
-  background-image: url("../images/header_stock.png");
-  background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  -ms-background-size: cover;
-  background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100vw;
-  max-width: 100vw;
-  max-height: 100vh;
-  height: 100vh;
-  position: relative;
-}
-body header nav {
-  width: 100%;
-  height: 50px;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 2;
-}
-body header nav * {
-  color: white;
-}
-body header nav .con {
-  width: 80%;
-  margin: 0px auto;
-}
-body header nav .con h2 {
-  float: left;
-  height: 100%;
-  line-height: 50px;
-  font-size: 25px;
-}
-body header nav .con h2 span {
-  color: #f7600e;
-}
-body header nav .con > span {
-  transition: all 0.5s;
-  display: block;
-  height: 100%;
-  line-height: 50px;
-  float: right;
-  cursor: pointer;
-}
-body header nav .con > span:hover {
-  transition: all 0.5s;
-  color: #f7600e;
-}
-body header nav .con > span:hover > i {
-  color: #f7600e;
-  transform: rotate(90deg) translateX(-5px);
-}
-body header nav .con > span:hover > ul {
-  opacity: 1;
-  transform: scale(1) translateY(0px);
-}
-body header nav .con > span > i {
-  transform-origin: center center;
-  padding-left: 15px;
-}
-body header nav .con > span ul {
-  opacity: 0;
-  position: absolute;
-  width: auto;
-  height: auto;
-  background-color: white;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-  border: none;
-  border-radius: 10px;
-  transform: scale(0) translateY(-100px);
-}
-body header nav .con > span ul li {
-  width: 100px;
-  height: 35px;
-  line-height: 35px;
-}
-body header nav .con > span ul li:hover {
-  background-color: #f7600e;
-}
-body header nav .con > span ul li:hover a {
-  color: white;
-}
-body header nav .con > span ul li a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  line-height: 35px;
-  color: #f7600e;
-  font-size: 15px;
-}
-body header nav .con > span ul li:first-child {
-  border: none;
-  border-radius: 10px 10px 0px 0px;
-}
-body header nav .con > span ul li:last-child {
-  border: none;
-  border-radius: 0px 0px 10px 10px;
-}
-body header .intro {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-body header .intro .con {
-  width: 70%;
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-body header .intro .con * {
-  text-align: center;
-  color: white;
-  background: none;
-}
-body header .intro .con h1 {
-  font-size: 25px;
-}
-body header .intro .con h1 span {
-  color: #f7600e;
-}
-body header .intro .con p {
-  font-size: 15px;
-}
-body header .intro .con .buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-body header .intro .con .buttons button {
-  border: none;
-  border-radius: 10px;
-  border: 1px solid #CCC;
-  padding: 5px 15px;
-  margin: 0px 15px;
-  cursor: pointer;
-  background-color: transparent;
-}
-body header .intro .con .buttons button:hover {
-  border-color: #f7600e;
-  background-color: #f7600e;
-}
-body header .intro .con .buttons span i.fa {
-  display: block;
-  position: absolute;
-  bottom: 25px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 10px;
-  border: none;
-  border-radius: 50%;
-  border: 1px solid white;
-  cursor: pointer;
-}
-body header .intro .con .buttons span i.fa:hover {
-  border-color: #f7600e;
-  background-color: #f7600e;
-}
-body article {
-  background-color: white;
-}
-body article section {
-  padding: 25px 0px;
-}
-body article section .con {
-  margin: 0px auto;
-  display: block;
-}
-body article section.features {
-  width: 100%;
-  height: auto;
-}
-body article section.features .con {
-  display: flex;
-  width: 75%;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-body article section.features .con > * {
-  width: 22%;
-  text-align: center;
-}
-body article section.features .con div.feature > * {
-  margin-bottom: 20px;
-}
-body article section.features .con div.feature i {
-  display: block;
-  width: 80px;
-  height: 80px;
-  border: none;
-  border-radius: 50%;
-  border: 2px solid #AAA;
-  margin: 0px auto 10px auto;
-  line-height: 80px;
-  color: #f7600e;
-  font-size: 30px;
-}
-body article section.features .con div.feature i:hover {
-  color: white;
-  background-color: #f7600e;
-  border-color: #f7600e;
-}
-body article section.features .con div.feature h3 {
-  font-size: 25px;
-}
-body article section.features .con div.feature p {
-  font-size: 12px;
-  font-weight: bolder;
-  color: #BBB;
-}
-body article section.subs {
-  background-image: url("../images/subscribe.png");
-  background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  -ms-background-size: cover;
-  background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 50px 0px;
-}
-body article section.subs form {
-  display: flex;
-  width: 100%;
-  height: auto;
-  justify-content: center;
-}
-body article section.subs form input {
-  margin-right: -15px;
-  padding: 0px 20px;
-  width: 250px;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 5px 0px 0px 5px;
-  border: 1px solid #AAA;
-}
-body article section.subs form input:focus {
-  border: 1px solid blue;
-  box-shadow: 0px 0px 15px blue;
-}
-body article section.subs form button {
-  box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  width: auto;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 0px 5px 5px 0px;
-  border: 1px solid #AAA;
-  padding: 0px 15px;
-  cursor: pointer;
-  background-color: #f7600e;
-  color: white;
-  font-weight: bolder;
-}
-body article section.subs form button:hover {
-  background-color: white;
-  color: #f7600e;
-}
-body footer {
-  background-color: #3b434c;
-  height: 60px;
-}
-body footer .con {
-  overflow: hidden;
-  width: 90%;
-  height: 100%;
-  margin: 0px auto;
-}
-body footer .con h3 {
-  color: white;
-  line-height: 60px;
-  font-size: 15px;
-}
-body footer .con h3 span {
-  color: #f7600e;
-}
-body footer .con h3:first-child {
-  float: left;
-}
-body footer .con h3:last-child {
-  float: right;
-}
-body #scrollToTop {
-  background-color: navy;
-  z-index: 2;
-}
-body #scrollToTop span.back {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  z-index: 3 !important;
-  background-color: blue;
-  width: 0px;
-  height: 30px;
-}
-body #scrollToTop i.fa.fa-chevron-up, body #scrollToTop i.fa#scrollToTop {
-  display: block;
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
-  width: 30px;
-  height: 30px;
-  color: white;
-  text-align: center;
-  line-height: 30px;
-  cursor: pointer;
-  z-index: 100;
-}
-body #scrollToTop:hover span.back {
-  width: 30px;
-}
-
-/*# sourceMappingURL=main.css.map */
+  overflow-x: hidden; }
+  body header {
+    background-image: url("../images/header_stock.png");
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    max-width: 100vw;
+    max-height: 100vh;
+    height: 100vh;
+    position: relative; }
+    body header nav {
+      width: 100%;
+      height: 50px;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 3; }
+      body header nav * {
+        color: white; }
+      body header nav .con {
+        width: 80%;
+        margin: 0px auto; }
+        body header nav .con h2 {
+          float: left;
+          height: 100%;
+          line-height: 50px;
+          font-size: 25px; }
+          body header nav .con h2 span {
+            color: #f7600e; }
+        body header nav .con > span {
+          transition: all 0.5s;
+          display: block;
+          height: 100%;
+          line-height: 50px;
+          float: right;
+          cursor: pointer; }
+          body header nav .con > span > i {
+            transform: rotate(-90deg) translateX(-8px) translateY(10px); }
+          body header nav .con > span:hover {
+            color: #f7600e; }
+            body header nav .con > span:hover > i {
+              color: #f7600e;
+              transform: rotate(0deg) translateX(-5px); }
+            body header nav .con > span:hover > ul {
+              opacity: 1;
+              transform: scale(1) translateY(0px); }
+          body header nav .con > span > i {
+            transform-origin: center center;
+            padding-left: 15px; }
+          body header nav .con > span ul {
+            opacity: 0;
+            position: absolute;
+            width: auto;
+            height: auto;
+            background-color: white;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+            border: none;
+            border-radius: 10px;
+            transform: scale(0) translateY(-100px); }
+            body header nav .con > span ul li {
+              width: 100px;
+              height: 35px;
+              line-height: 35px; }
+              body header nav .con > span ul li:hover {
+                background-color: #f7600e; }
+                body header nav .con > span ul li:hover a {
+                  color: white; }
+              body header nav .con > span ul li a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                line-height: 35px;
+                color: #f7600e;
+                font-size: 15px; }
+              body header nav .con > span ul li:first-child {
+                border: none;
+                border-radius: 10px 10px 0px 0px; }
+              body header nav .con > span ul li:last-child {
+                border: none;
+                border-radius: 0px 0px 10px 10px; }
+    body header .intro {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      body header .intro .con {
+        width: 70%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center; }
+        body header .intro .con * {
+          text-align: center;
+          color: white;
+          background: none; }
+        body header .intro .con h1 {
+          font-size: 25px; }
+          body header .intro .con h1 span {
+            color: #f7600e; }
+        body header .intro .con p {
+          font-size: 15px; }
+        body header .intro .con .buttons {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center; }
+          body header .intro .con .buttons button {
+            border: none;
+            border-radius: 10px;
+            border: 1px solid #CCC;
+            padding: 5px 15px;
+            margin: 0px 15px;
+            cursor: pointer;
+            background-color: transparent; }
+            body header .intro .con .buttons button:hover {
+              border-color: #f7600e;
+              background-color: #f7600e; }
+          body header .intro .con .buttons span i.fa {
+            display: block;
+            position: absolute;
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px;
+            border: none;
+            border-radius: 50%;
+            border: 1px solid white;
+            cursor: pointer; }
+            body header .intro .con .buttons span i.fa:hover {
+              border-color: #f7600e;
+              background-color: #f7600e; }
+  body article {
+    background-color: white; }
+    body article section {
+      padding: 25px 0px; }
+      body article section .con {
+        margin: 0px auto;
+        display: block; }
+    body article section.features {
+      width: 100%;
+      height: auto; }
+      body article section.features .con {
+        display: flex;
+        width: 75%;
+        flex-direction: row;
+        justify-content: space-evenly; }
+        body article section.features .con > * {
+          width: 22%;
+          text-align: center; }
+        body article section.features .con div.feature > * {
+          margin-bottom: 20px; }
+        body article section.features .con div.feature i {
+          display: block;
+          width: 80px;
+          height: 80px;
+          border: none;
+          border-radius: 50%;
+          border: 2px solid #AAA;
+          margin: 0px auto 10px auto;
+          line-height: 80px;
+          color: #f7600e;
+          font-size: 30px; }
+          body article section.features .con div.feature i:hover {
+            color: white;
+            background-color: #f7600e;
+            border-color: #f7600e; }
+        body article section.features .con div.feature h3 {
+          font-size: 25px; }
+        body article section.features .con div.feature p {
+          font-size: 12px;
+          font-weight: bolder;
+          color: #BBBBBB; }
+    body article section.subs {
+      background-image: url("../images/subscribe.png");
+      background-size: cover;
+      -moz-background-size: cover;
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+      -ms-background-size: cover;
+      background-blend-mode: multiply;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 50px 0px; }
+      body article section.subs form {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: center; }
+        body article section.subs form input {
+          margin-right: -15px;
+          padding: 0px 20px;
+          width: 250px;
+          height: 30px;
+          line-height: 30px;
+          border-radius: 5px 0px 0px 5px;
+          border: 1px solid #AAA; }
+          body article section.subs form input:focus {
+            border: 1px solid blue;
+            box-shadow: 0px 0px 15px blue; }
+        body article section.subs form button {
+          box-sizing: content-box;
+          -moz-box-sizing: content-box;
+          -webkit-box-sizing: content-box;
+          width: auto;
+          height: 30px;
+          line-height: 30px;
+          border-radius: 0px 5px 5px 0px;
+          border: 1px solid #AAA;
+          padding: 0px 15px;
+          cursor: pointer;
+          background-color: #f7600e;
+          color: white;
+          font-weight: bolder; }
+          body article section.subs form button:hover {
+            background-color: white;
+            color: #f7600e; }
+    body article section.works#works {
+      width: 100%;
+      height: auto;
+      padding: 25px 0px; }
+      body article section.works#works > * {
+        margin-bottom: 25px; }
+      body article section.works#works h1 {
+        text-align: center;
+        font-size: 30px; }
+        body article section.works#works h1 span {
+          color: #f7600e; }
+      body article section.works#works p {
+        text-align: center;
+        line-height: 1.25;
+        width: 60%;
+        margin: 0px auto 25px auto;
+        color: #AAA; }
+      body article section.works#works div.con {
+        display: grid;
+        width: 90%;
+        height: auto;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: auto auto auto;
+        grid-column-gap: 5%;
+        grid-row-gap: 25px;
+        margin: 0px auto; }
+        body article section.works#works div.con div.box {
+          position: relative;
+          overflow: hidden;
+          width: 100%;
+          height: auto;
+          border: none;
+          border-radius: 25px; }
+          body article section.works#works div.con div.box div.overlay {
+            width: 100%;
+            height: 100%;
+            background-color: #f7600e;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            z-index: 2;
+            top: 0px;
+            left: 0px;
+            opacity: 0;
+            box-sizing: border-box; }
+            body article section.works#works div.con div.box div.overlay:hover {
+              opacity: .8; }
+            body article section.works#works div.con div.box div.overlay h2 {
+              width: 95%; }
+            body article section.works#works div.con div.box div.overlay > * {
+              margin-bottom: 15px; }
+            body article section.works#works div.con div.box div.overlay * {
+              text-align: center;
+              color: white; }
+            body article section.works#works div.con div.box div.overlay button {
+              padding: 5px 25px;
+              font-size: 16px;
+              background: none;
+              border: none;
+              border-radius: 10px;
+              border: 1px solid white;
+              cursor: pointer; }
+              body article section.works#works div.con div.box div.overlay button:hover {
+                background-color: white;
+                color: #f7600e; }
+  body footer {
+    background-color: #3b434c;
+    height: 60px; }
+    body footer .con {
+      overflow: hidden;
+      width: 90%;
+      height: 100%;
+      margin: 0px auto; }
+      body footer .con h3 {
+        color: white;
+        line-height: 60px;
+        font-size: 15px; }
+        body footer .con h3 span {
+          color: #f7600e; }
+        body footer .con h3:first-child {
+          float: left; }
+        body footer .con h3:last-child {
+          float: right; }
+  body #scrollToTop {
+    background-color: navy;
+    z-index: 2; }
+    body #scrollToTop span.back {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      z-index: 3 !important;
+      background-color: blue;
+      width: 0px;
+      height: 30px; }
+    body #scrollToTop i.fa.fa-chevron-up, body #scrollToTop i.fa#scrollToTop {
+      display: block;
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      width: 30px;
+      height: 30px;
+      color: white;
+      text-align: center;
+      line-height: 30px;
+      cursor: pointer;
+      z-index: 100; }
+    body #scrollToTop:hover span.back {
+      width: 30px; }
+  body div.overlay.active {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    z-index: 100; }
+  body div.popUp {
+    display: none; }
+  body div.popUp.active {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    width: 400px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #CCC;
+    border: none;
+    border-radius: 15px;
+    border: 5px solid #AAA; }
+    body div.popUp.active > * {
+      display: block;
+      margin-bottom: 15px;
+      text-align: center; }
+    body div.popUp.active img {
+      width: 60%;
+      height: auto; }
+    body div.popUp.active button {
+      padding: 5px 25px;
+      font-size: 20px;
+      border: none;
+      border-radius: 10px;
+      border: 2px solid white;
+      background: none;
+      color: white;
+      cursor: pointer; }
+      body div.popUp.active button:hover {
+        background-color: #f7600e;
+        border-color: #f7600e; }

@@ -1,0 +1,28 @@
+{
+  "name": "sass-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bilal165/sass-project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bilal165/sass-project/issues"
+  },
+  "homepage": "https://github.com/bilal165/sass-project#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-git": "^2.10.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-zip": "^5.0.2"
+  }
+}
